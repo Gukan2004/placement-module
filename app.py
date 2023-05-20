@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 QUES=[{
     'qno':1,
-    'q':'what is your name'
+    'q':'You are a legend'
 },
 {
     'qno':2,
-    'q':'why are you gay'
+    'q':'what is your name'
 },
 {
     'qno':3,
