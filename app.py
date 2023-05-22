@@ -16,17 +16,20 @@ QUES=[{
 },
 {
     'qno':4,
-    'q':'pls leave me alone'
+    'q':'you are awesome'
 },
 {
     'qno':5,
-    'q':'you are a shit'
+    'q':'you '
 }]
 
 @app.route('/')
 def hello():
-    return render_template('login.html',ques=QUES)
+    return render_template('course.html',ques=QUES)
 
 @app.route('/api/question')
 def list_ques():
     return jsonify(QUES)
+
+if __name__=="__main__":
+    app.run(host='0.0.0.0', debug=True)
