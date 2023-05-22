@@ -25,7 +25,11 @@ QUES=[{
 
 @app.route('/')
 def hello():
-    return render_template('login.html',ques=QUES)
+    return render_template('login.html')
+
+@app.route('/course')
+def course():
+    return render_template('course.html',ques=QUES)
 
 @app.route('/api/question')
 def list_ques():
